@@ -1,0 +1,737 @@
+html {
+    background-color: rgba(122, 191, 191, .5);
+
+}
+
+body {
+    width: 414px;
+    background-color: #F2F2F2;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+    background-color: white;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+h1 {
+    font-size: 40px;
+    margin-left: 125px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+nav a, nav span, menu li, #social li, footer a, footer p {
+    font-size: 20px;
+}
+
+h1, h2, h3, nav a, nav span, menu li, #social li, footer a, footer p {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+p, dd, li, nav, input, dt {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+dt {
+    font-weight: bold;
+}
+
+#sideDish {
+    background-color: #7ABFBF;
+}
+
+nav h2 {
+    visibility: hidden;
+    position: absolute;
+}
+
+a {
+    color: black;
+}
+
+#sideDishes {
+    background-color: #7ABFBF;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, menu {
+    list-style-type: none;
+}
+
+menu {
+    display: flex;
+}
+
+menu svg {
+    display: block;
+    position: relative;
+    left: -3px;
+}
+
+menu li {
+    margin-right: 60px;
+    
+}
+
+#jumpTo {
+    position: relative;
+    width: 100px;
+}
+
+#jumpText {
+    position: relative;
+    left: -30px;
+}
+
+menu a {
+    color:#EB5428;
+
+}
+
+#hamburger {
+    position: relative;
+    display: none;
+}
+
+label {
+    left: 35px;
+    top: 10px;
+}
+
+#logo {
+    position: absolute;
+    background-color: #EB5428;
+    margin-left: 70px;
+    top: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+    height: 86px;
+}
+
+#logo svg {
+    margin-top: 10px;
+}
+
+#signIn {
+    position: absolute;
+    margin-left: 300px;
+    top: 8px;
+    display: block;
+    width: 50px;
+}
+
+nav {
+    top: 0;
+    z-index: 1;
+    width: 414px;
+    
+}
+
+nav ul {
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+nav label {
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+}
+
+ul img {
+    width: 100px;
+    height: 100px;
+}
+
+nav label span {
+    position: relative;
+    display: block;
+    width: 20px;
+}
+
+nav ul {
+    overflow: hidden;
+    max-height: 0;
+}
+
+nav input:checked ~ ul {
+    max-height: 800px;
+}
+
+form {
+    color: #EB5428;
+    position: relative;
+    text-align: center;
+    top: 15px;
+}
+
+form input {
+    height: 40px;
+    border: 3px solid #EB5428;
+    position: relative;
+    bottom: 14px;
+    left: 4px;
+    width: 250px;
+}
+
+form svg {
+    background-color: #EB5428;
+}
+
+#tacos h2 {
+    visibility: hidden;
+    position: absolute;
+}
+
+#tacos img {
+    width: 414px;
+}
+
+#tacos p {
+    margin-left: 14px;
+    margin-right: 6px;
+}
+
+#tacos {
+    width: 414px;
+}
+
+#details, #ingredients, #directions, #sideDishes{
+    width: 414px;
+}
+
+#details h2, #ingredients h2, #directions h2, #sideDishes h2{
+    text-align: center;
+}
+
+#details dl {
+    display: flex;
+    margin-left: 14px;
+}
+
+#details dd {
+    position: relative;
+    right: 30px;
+}
+
+#ingredients li {
+    list-style-type: square;
+    margin-bottom: 15px;
+}
+
+#directions li {
+    margin-bottom: 15px;
+    margin-right: 6px;
+}
+
+#sideDishes h2 {
+    padding-top: 10px;
+}
+
+#sideDishes img {
+    width: 20%;
+    float: left;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 0;
+
+}
+
+#sideDishes h3 {
+    position: relative;
+    margin-left: 115px;
+    top: 50px;
+}
+
+#sideDishes p, #sideDishes svg {
+    position: relative;
+    top: 35px;
+    margin: 0;
+}
+
+.rating {
+    font-weight: bold;
+}
+
+#sideDishes svg {
+    margin-right: 10px;
+}
+
+#sideDishes section svg:hover {
+    fill: white;
+}
+
+#sideDishes section {
+    height: 100px;
+    position: relative;
+    bottom: 50px;
+}
+
+footer {
+    width: 414px;
+}
+
+footer a {
+    color:#EB5428;
+}
+
+footer img {
+    width: 200px;
+    position: relative;
+    left: 105px;
+    grid-area: picture;
+    margin-bottom: 30px;
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer h2 {
+    position: absolute;
+    visibility: hidden;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.text {
+    position: relative;
+    margin-right: 10px;
+}
+
+#tikTok {
+    position: relative;
+    top: 23px;
+    right: 50px;
+}
+
+#copyright {
+    display: grid;
+    grid-template-areas: 
+    "picture";
+}
+
+.fbIgYt {
+    position: relative;
+    right: -9px;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        width: 768px;
+    }
+
+    nav {
+        border-bottom: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        width: 768px;
+        height: 200px;
+    }
+
+    h1 {
+        margin-left: 15px;
+    }
+
+    #logo {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: -40px;
+    }
+
+    #signIn {
+        margin-left: 660px;
+    }
+
+    #signIn a {
+        color: black;
+    }
+
+    form {
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 350px
+    }
+
+    label {
+        position: absolute;
+        left: 100000px;
+    }
+    
+
+    nav ul {
+        overflow: visible;
+        display: flex;
+        border-bottom: none;
+        width: 768px;
+        
+    }
+
+    nav li {
+        margin-right: 45px;
+    }
+
+    nav a {
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img {
+        width: 50px;
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    nav ul li a {
+       color:#EB5428;
+    }   
+
+    form a {
+        display: inline;
+    }
+
+    menu {
+        background-color: rgba(255, 255, 255, .5);
+        position: absolute;
+        width: 729px;
+        height: 120px;
+        top: 287px;
+    }
+
+    menu li:nth-of-type(4) {
+        margin-right: 0px;
+    } 
+
+    menu li {
+        margin-right: 150px;
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+
+    #tacos {
+        width: 768px;
+    }
+    
+    #tacos img {
+        width: 768px;
+    }
+
+    #medium {
+        display: flex;
+    }
+
+    #details {
+        width: 768px;
+    }
+
+    #details dl {
+        justify-content: center;
+    }
+
+    #ingredients {
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 25%;
+    }
+
+    #directions {
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 75%;
+    }
+
+    #directions li {
+        line-height: 31px;
+    }
+
+    #sideDishes h2 {
+        margin: 0;
+        margin-left: 250px;
+        position: absolute;
+    }
+
+    #sideDishes {
+        width: 768px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 280px;
+        padding-bottom: 60px;
+    }
+
+    #sideDishes section {
+        top: -10px;
+    }
+
+    #sideDishes img {
+        width: 100px;
+        margin-left: 0;
+    }
+
+    #sideDishes p {
+        margin-top: 20px;
+        top: 45px;
+        right: 10px;
+    }
+
+    #sideDishes svg {
+        position: relative;
+        top: 25px;
+        left: 50px;
+    }
+
+    #sideDishes h3 {
+        margin-left: 110px;
+        top: 60px;
+    }
+
+    footer {
+        width: 768px;
+    }
+
+    #copyright p {
+        margin-left: 150px;
+    }
+
+    #copyright img {
+        margin-top: 60px;
+    }
+
+    #connect {
+        position: absolute;
+        margin-left: 360px;
+        margin-top: 50px;
+    }
+
+    .text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .fbIgYt {
+        position: relative;
+        right: -14px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    body {
+        width: 1280px;
+    }
+
+    nav {
+        width: 1280px;
+        height: 125px;
+    }
+
+    #signIn {
+        margin-left: 1150px;
+        margin-top: 20px;
+    }
+
+
+    .items {
+        position: relative;
+        left: 220px;
+        margin-left: 10px;
+        margin-top: -80px;
+    }
+
+    #logo {
+        padding: 20px 30px;
+    }
+
+    #searchBar {
+        margin-left: 150px;
+        margin-top: 150px;
+    }
+
+    form a {
+        margin-left: -1px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    menu {
+        display: inline;
+        height: 722px;
+        width: 110px;
+        border: 2px solid #EB5428;
+        background-color: white;
+    }
+
+    #tacos img {
+        margin-left: 152px;
+        margin-top: 2px;
+        width: 480px;
+        height: 725px;
+    }
+
+    #tacos p {
+        line-height: 40px;
+        margin-left: 5px;
+    }
+
+    #largeP {
+        position: absolute;
+        width: 630px;
+        padding-left: 640px;
+        padding-top: 150px;
+    }
+
+    #tacos {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        width: 1280px;
+    }
+
+    #details {
+        color:#7ABFBF;
+        background-color: black;
+        margin: 0 auto;
+        width: 1280px;
+        height: 100px;
+        display: flex;
+    }
+
+    #details h2 {
+        position: relative;
+        bottom: 20px;
+        left: 610px;
+    }
+
+    #details dl {
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 90px;
+        top: 25px;
+        left: 30px;
+    }
+    
+    #details dt {
+        position: relative;
+        right: 10px;
+    }
+
+    #ingredients h2, #directions h2 {
+        margin-top: 10px;
+    }
+
+    #directions {
+        width: 1100px;
+        position: relative;
+        right: 30px;
+    }
+
+    #sideDishes {
+        width: 1280px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 410px;
+    }
+
+    #sideDishes p {
+        position: relative;
+        top: 50px;
+        left: 20px;
+        margin-bottom: 10px;
+    }
+
+    #sideDishes h2 {
+        margin-left: 500px;
+    }
+    
+    #sideDishes h3 {
+        top: 315px;
+        right: 87px;
+    }
+
+    #sideDishes img {
+        width: 250px;
+    }
+
+    #sideDishes section {
+        width: 230px;
+        margin: 0 auto;
+        right: 25px;
+    }
+
+    #sideDishes svg {
+        position: relative;
+        top: 20px;
+        left: 80px;
+    }
+
+    footer {
+        width: 1280px;
+        height: 270px;
+    }
+
+    #copyright {
+        position: relative;
+    }
+
+    #copyright p {
+        position: relative;
+        left: 60px;
+        top: 70px;
+    }
+
+    #copyright img {
+        position: absolute;
+        margin-left: -90px;
+        margin-top: 50px;
+    }
+
+    #connect {
+        margin-left: 560px;
+    }
+
+    #connect li {
+        margin-left: 70px;
+    }
+}
